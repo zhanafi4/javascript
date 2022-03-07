@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script language="javascript" src="perhitungan.js"></script>
+    <title>Belajar JS - Abdurrauf Zahid Hanafi - STT Nurulfikri - NFcom</title>
+</head>
+<body>
+    <h3 align="center">Full Stack Developer - NFCom</h3>
+    <marquee onmouseover="stop()" onmouseout="start()">
+        <h1>Abdurrauf Zahid Hanafi - STT Nurul Fikri - On Focus - Kalkulator  </h1>
+    </marquee>
+<hr>
+    <form id="formulir">
+            <table align="center" cellpadding="5" cellspacing="10" width="30%">
+                <thead>
+                    <th colspan="3"><h1>Kalkulator</h1>Aritmatika</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td width="40%">Input Angka 1</td>
+                        <td colspan="2" width="10">
+                        <input type="text" name="a1" value="Input Angka Pertama" size="45" value="Input Angka Pertama" onfocus="angka1()" />
+                    </td>
+                    </tr>
+                    <tr>
+                        <td width="40%">Input Angka 2</td>
+                        <td colspan="2" width="10">
+                        <input type=text name="a2" value="Input Angka Kedua"
+                        size="45"  onfocus="angka2()"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="40%">Hasil Perhitungan</td>
+                        <td colspan="2" width="10">
+                        <input type=text name="hasil" 
+                        size="45" value=""disabled />
+                        </td>
+                    </tr>
+                    <tfoot>
+                        <th bgcolor="grey" colspan="3">
+                            <input type="button" onclick="tambah()" name="proses" value="+">
+                            <input type="button" onclick="kurang()" name="proses" value="-">
+                            <input type="button" onclick="kali()" name="proses" value="X">
+                            <input type="button" onclick="bagi()" name="proses" value="/">
+                            <input type="button" onclick="kuadrat()" name="proses" value="^">
+                            <input type="button" onclick="ulang()" name="proses" value="Ulang">
+                        </th>          
+                    </tfoot>
+                </tbody>
+            </table>
+    </form>  
+</body>
+
+</html>
