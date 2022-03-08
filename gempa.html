@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar JS - Abdurrauf Zahid Hanafi - STT Nurulfikri - NFcom</title>
+</head>
+<body>
+    <h3 align="center">Full Stack Developer - NFCom</h3>
+    <marquee onmouseover="stop()" onmouseout="start()">
+        <h1>Abdurrauf Zahid Hanafi - STT Nurul Fikri - Informasi Gempa - Js Class dan Object  </h1>
+    </marquee>
+<hr>
+    <h1 align="center">Informasi Gempa Di Seluruh Dunia</h1>
+        
+    <p align="center">
+            <script>
+                //-----------------membuat class------------------
+                class gempa {
+                    //member1 & 2 : variabel dan konstruktor
+                    constructor(lokasi, skala) {
+                        this.Lo = lokasi;
+                        this.scl = skala; 
+                    }
+                    //member3 fungsi2
+                    dampak(kejadian) {          
+                        if (this.scl >=0 && this.scl <=2) kejadian = "dampaknya tidak terasa";
+                        else if (this.scl >=2 && this.scl <=4) kejadian = "dampaknya bangunan retak-retak";
+                        else if (this.scl >= 4 && this.scl <= 6) kejadian = "dampaknya bangunan roboh";
+                        else kejadian = "dampaknya bangunan roboh dan berpotensi tsunami";
+
+                        document.write(`Lokasi : ${this.Lo}
+                        <br/>Skala : ${this.scl}
+                        <br/>Dampak :${kejadian}<hr/>`);
+                    
+                    }
+                }
+                //---------------ciptakan object------------------
+                let amr = new gempa('Amerika',4)
+                //member class
+                amr.dampak()
+                //---------------ciptakan object------------------
+                let blnd = new gempa('belanda',1)
+                //member class
+                blnd.dampak()
+                //---------------ciptakan object------------------
+                let jpg = new gempa('jepang',7)
+                //member class
+                jpg.dampak()
+                //---------------ciptakan object------------------
+                let zimb = new gempa('Zimbabwe',3)
+                zimb.dampak()
+                //---------------ciptakan object------------------
+                let fr = new gempa('Perancis',0)
+                //member class
+                fr.dampak()
+                //---------------ciptakan object------------------
+                let sr = new gempa('Suriah',9)
+                //member class
+                sr.dampak()
+                //---------------ciptakan object------------------
+                let yn = new gempa('Yunani',3)
+                //member class
+                yn.dampak()
+                //---------------ciptakan object------------------
+                let hug = new gempa('Hungaria',5)
+                //member class
+                hug.dampak()
+                //---------------ciptakan object------------------
+                let trk = new gempa('Turkiye',2)
+                //member class
+                trk.dampak()
+                //---------------ciptakan object------------------
+                let saud = new gempa('Saudi Arabia',8)
+                //member class
+                saud.dampak()
+            </script>
+    </p>
+</body>
+
+</html>
+
+ 
