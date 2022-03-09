@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Belajar JS - Abdurrauf Zahid Hanafi - STT Nurulfikri - NFcom</title>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript">
+            $("document").ready(function () {
+                    $("div.kamera").dblclick(function () {
+                        $(this).css({
+                        background: "url('image/camera.gif')"
+                        });
+                        $("<audio></audio>").attr({ 
+                            'src':'sound/camera.wav', 
+                            'autoplay':'autoplay'
+                        });
+                    });
+                    $("div.hp").dblclick(function () {
+                        $(this).css({
+                        background: "url('image/phone.gif')"
+                        });
+                        $("<audio></audio>").attr({ 
+                            'src':'sound/phone.wav', 
+                            'autoplay':'autoplay'
+                        });
+                    });
+                    $("div.keyboard").dblclick(function () {
+                        $(this).css({
+                        background: "url('image/keyboard.gif')"
+                        });
+                        $("<audio></audio>").attr({ 
+                            'src':'sound/keyboard.wav', 
+                            'autoplay':'autoplay'
+                        });
+                    });
+                    $("div.pencil").dblclick(function () {
+                        $(this).css({
+                        background: "url('image/pencil_dribble.gif')"
+                        });
+                        $("<audio></audio>").attr({ 
+                            'src':'sound/paper.wav', 
+                            'autoplay':'autoplay'
+                        });
+                    });
+                    });
+        </script>
+        <style type="text/css">
+            div {
+            background: greenyellow;
+            width: 560px;
+            height: 480px;
+            float: left;
+            margin: 10px;
+            cursor: pointer;
+            }
+        </style>
+    </head>
+        <body>
+        <h3 align="center">Full Stack Developer - NFCom</h3>
+            <marquee onmouseover="stop()" onmouseout="start()">
+        <h1>Abdurrauf Zahid Hanafi - STT Nurul Fikri - dblclickfunction - JQuery</h1>
+            </marquee>
+        <hr>
+        <h1 align="center">klik dua kali pada setiap kotak untuk mengubah
+        warnanya</h1>
+        <center>
+            <div class="kamera"></div>
+            <div class="hp"></div>
+            <div class="keyboard"></div>
+            <div class="pencil"></div>
+        </center>
+        </body>
+    </html>
