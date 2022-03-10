@@ -1,0 +1,29 @@
+.jumbotron {
+    height: 200px;
+    width: auto;
+    background-color: aqua;
+    font-weight: bold;
+    align-items: center;
+    background-image: url("https://i2.wp.com/qomaruna.com/wp-content/uploads/2019/09/desain-grafis-software-1.jpg?fit=800%2C400&ssl=1");
+    
+}
+.nav {
+    background-color: white;
+    color: aliceblue;
+    padding: 0px;
+    align-self: center;
+}
+.carousel-inner{
+    height: auto;
+    width: auto;
+}
+.col-md-2 {
+    background-color: aqua;
+}
+.col-md-12 {
+    background-color: #d0e9c6;
+}
+
+.nav-link {
+    color: blue;
+}
